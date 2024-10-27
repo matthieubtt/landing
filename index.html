@@ -7,38 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header avec la bannière -->
-    <header class="banner">
+
+    <!-- Menu de Navigation -->
+    <nav class="navbar">
         <img src="images/logo.png" alt="Logo MMA Startup" class="logo">
-        <h1>Bienvenue à MMA Startup</h1>
-        <p>Formez-vous avec les meilleurs en MMA</p>
+        <ul class="nav-links">
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bannière compacte -->
+    <header class="banner">
+        <div class="banner-content">
+            <h1>MMA Startup</h1>
+            <p>Entraînez-vous avec les meilleurs</p>
+        </div>
     </header>
 
-    <!-- Section Présentation -->
-    <section class="about">
-        <h2>À Propos de Nous</h2>
-        <p>MMA Startup est une entreprise passionnée de MMA, spécialisée dans l'entraînement et la préparation physique pour les athlètes. Que vous soyez débutant ou professionnel, rejoignez notre communauté et apprenez avec les meilleurs.</p>
+    <!-- Section Présentation en Grille -->
+    <section id="about" class="about">
+        <h2>Qui Sommes-Nous ?</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Nous sommes une startup dédiée à la formation en MMA pour tous les niveaux. Notre mission est de vous offrir les meilleurs programmes d'entraînement pour atteindre vos objectifs sportifs.</p>
+            </div>
+            <img src="images/about.jpg" alt="Image À propos" class="about-image">
+        </div>
     </section>
 
-    <!-- Section Services -->
-    <section class="services">
+    <!-- Section Services en Cartes -->
+    <section id="services" class="services">
         <h2>Nos Services</h2>
-        <div class="service-card">
-            <h3>Entraînement Personnalisé</h3>
-            <p>Un programme d'entraînement adapté à votre niveau et vos objectifs.</p>
-        </div>
-        <div class="service-card">
-            <h3>Coaching Nutrition</h3>
-            <p>Des conseils nutritionnels pour atteindre votre meilleur niveau de performance.</p>
-        </div>
-        <div class="service-card">
-            <h3>Accès à des Compétitions</h3>
-            <p>Participez à des événements et testez vos compétences sur le ring.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Entraînement Intensif</h3>
+                <p>Des séances personnalisées pour améliorer votre condition physique et mentale.</p>
+            </div>
+            <div class="service-card">
+                <h3>Coaching Nutritionnel</h3>
+                <p>Des conseils alimentaires pour atteindre vos objectifs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Accès à des Compétitions</h3>
+                <p>Participez à des événements professionnels et testez vos compétences.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Section Contact -->
-    <section class="contact">
+    <!-- Section Contact avec Formulaire -->
+    <section id="contact" class="contact">
         <h2>Contactez-Nous</h2>
         <form>
             <label for="name">Nom</label>
@@ -55,5 +74,6 @@
     <footer class="footer">
         <p>&copy; 2023 MMA Startup. Tous droits réservés.</p>
     </footer>
+
 </body>
 </html>
