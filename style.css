@@ -11,55 +11,105 @@ body {
     color: #333;
 }
 
+/* Menu de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Bannière */
 .banner {
     background-image: url('images/banner.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
+    padding: 100px 20px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-.logo {
-    width: 80px;
-    margin-bottom: 20px;
+.banner-content {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .banner h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 3em;
 }
 
 .banner p {
     font-size: 1.2em;
 }
 
-/* Section À Propos */
+/* Section À propos en grille */
 .about {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-.about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-/* Section Services */
+.about-text {
+    max-width: 500px;
+    font-size: 1.1em;
+}
+
+.about-image {
+    width: 250px;
+    border-radius: 8px;
+}
+
+/* Section Services en cartes */
 .services {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .service-card {
-    display: inline-block;
     background: white;
     width: 250px;
-    margin: 15px;
     padding: 20px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
 }
 
 .service-card h3 {
@@ -70,14 +120,15 @@ body {
 /* Section Contact */
 .contact {
     padding: 40px 20px;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
 .contact form {
-    display: flex;
-    flex-direction: column;
     max-width: 400px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact label {
@@ -110,7 +161,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: #111;
     color: white;
     text-align: center;
     padding: 20px 0;
